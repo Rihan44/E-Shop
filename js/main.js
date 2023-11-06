@@ -68,7 +68,7 @@ function cartProducts(){
             let product_description = document.createElement('p');
             product_description.innerHTML = cart[i].name;
             let product_price = document.createElement('p');
-            product_price.innerHTML = cart[i].price;
+            product_price.innerHTML = cart[i].price +' $';
             product_price.classList.add('cart__price');
     
             cart_products__product.appendChild(product_description);
@@ -86,7 +86,7 @@ function cartProducts(){
         total.innerHTML = 'Total';
         let cart_price = document.createElement('p');
     
-        cart_price.innerHTML = products_price;
+        cart_price.innerHTML = products_price +' $';
         cart_price.classList.add('cart__price');
     
         buy.appendChild(total);
