@@ -533,21 +533,40 @@ main.main {
         display: flex;
         justify-content: space-around;
         align-items: center;
+        margin-top: 30px;
 
         & div.profile__img {
+            width: 250px;
+            height: 250px;
+            border-radius: 100%;
+            border: 5px solid #852424;
+            overflow: hidden;
+            position: relative;
+
             & img.profile__image {
-                width: 250px;
-                height: 250px;
-                border-radius: 100%;
-                border: 5px solid #852424;
+                width: 100%;
+                height: 100%;
+                border-radius: 90%;
+                z-index: 1;
+            }
+
+            & input#img_input {
+                height: 100%;
+                cursor: pointer;
+                position: absolute;
+                color: #ffffff;
+                right: 0;
+                top: -5px;
             }
         }
 
         & div.profile__data {
             display: flex;
             flex-direction: column;
+            width: 50%;
+            margin-top: 30px;
 
-            h4 {
+            & h4 {
                 color: #ffffff;
                 font-size: 1.6em;
                 text-transform: uppercase;
@@ -587,6 +606,65 @@ main.main {
                     padding-left: 0;
                     text-decoration: none;
                     text-transform: uppercase;
+                }
+            }
+
+            & form#form_edit {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+
+                & div.container__input {
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    margin: 5px;
+
+                    & label {
+                        color: #ffffff;
+                        font-size: 1.6em;
+                        text-transform: uppercase;
+                        margin: 5px;
+                    }
+
+                    & input {
+                        width: 60%;
+                        height: 30px;
+                        border-radius: 5px;
+                        border: none;
+                        padding-left: 10px;
+                        background-color: #852424;
+                        box-shadow: 2px 2px 2px 2px #111111;
+                        color: #ffffff;
+                    }
+                }
+
+                & button#btn_save_profile {
+                    width: 20%;
+                    align-self: flex-end;
+                    margin-top: 20px;
+                    background-color: #FF0002;
+                    border: 2px solid #ffffff;
+                    border-radius: 10px;
+                    color: #ffffff;
+                    box-shadow: 2px 2px 2px 2px #111111;
+                    transition: 0.3s;
+                    cursor: pointer;
+    
+                    &:hover {
+                        transform: scale(1.1);
+                    }
+    
+                    & a {
+                        color: #ffffff;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-around;
+                        width: 100%;
+                        padding: 10px;
+                        text-decoration: none;
+                        text-transform: uppercase;
+                    }
                 }
             }
         }

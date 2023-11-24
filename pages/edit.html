@@ -40,22 +40,33 @@
     <main class="main">
         <section class="profile__container">
             <div class="profile__img">
-                <img src="/img/profile.jpg" alt="img_profile" class="profile__image"/>
+                <img src="/img/no_img.png" alt="img_profile" class="profile__image"/>
+                <input type="file" name="image" id="img_input"/>
             </div>
             <div class="profile__data">
-                <h4>Nombre: <span>Ángel Samuel Muela Bustamante</span></h4>
-                <h4>Email: <span>asmuela.dev@gmail.com</span></h4>
-                <h4>Telefono: <span>+34 857411254</span></h4>
-                <h4>Dirección: <span>Calle del oro nº 2</span></h4>
-                <button id="btn_edit_profile">
-                    
-                    <a href="editar.html">
-                        <span class="material-symbols-outlined">
-                            edit
-                        </span>
-                        Editar
-                    </a>
-                </button>
+                <form id="form_edit">
+                    <div class="container__input">
+                        <label for="name">Nombre:</label>
+                        <input type="text" name="nombre" id="nombre_profile" placeholder="Nombre..."/>
+                    </div>
+                    <div class="container__input">
+                        <label for="name">Email:</label>
+                        <input type="text" name="email" id="email_profile" placeholder="Email..."/>
+                    </div>
+                    <div class="container__input">
+                        <label for="name">Teléfono:</label>
+                        <input type="text" name="telefono" id="telefono_profile" placeholder="Teléfono..."/>
+                    </div>
+                    <div class="container__input">
+                        <label for="name">Dirección:</label>
+                        <input type="text" name="direccion" id="direccion_profile" placeholder="Dirección..."/>
+                    </div>
+                    <button type="submit" id="btn_save_profile">
+                        <a href="profile.html">
+                            Guardar
+                        </a>
+                    </button>
+                </form>
             </div>
         </section>
     </main>
