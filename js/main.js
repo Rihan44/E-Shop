@@ -116,7 +116,7 @@ if(btn_modal !== null) {
         let modal = document.querySelector('.modal');
         modalScreen.style.display = 'none';
         modal.style.opacity = '0';
-        location.href = '../index.html';
+        location.href = '/index.html';
     })
 }
 

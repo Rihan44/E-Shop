@@ -517,3 +517,78 @@ div.modal button:hover {
     color: #1B1B23;
     background-color: #ffffff;
 }
+
+
+/* PROFILE */
+main.main {
+    & section.profile__container {
+        width: 60%;
+        height: auto;
+        margin: 0 auto;
+        border: 2px solid #852424;
+        border-radius: 10px;
+        box-shadow: 2px 2px 2px 2px #111111;
+        margin-bottom: 40px;
+        padding: 30px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        & div.profile__img {
+            & img.profile__image {
+                width: 250px;
+                height: 250px;
+                border-radius: 100%;
+                border: 5px solid #852424;
+            }
+        }
+
+        & div.profile__data {
+            display: flex;
+            flex-direction: column;
+
+            h4 {
+                color: #ffffff;
+                font-size: 1.6em;
+                text-transform: uppercase;
+                margin: 5px;
+                
+                & span {
+                    font-size: 0.8em;
+                    color: #852424;
+                    margin-left: 20px;
+                    text-align: center;
+                }
+            }
+
+            & button#btn_edit_profile {
+                width: 20%;
+                align-self: flex-end;
+                margin-top: 10px;
+                background-color: #FF0002;
+                border: 2px solid #ffffff;
+                border-radius: 10px;
+                color: #ffffff;
+                box-shadow: 2px 2px 2px 2px #111111;
+                transition: 0.3s;
+                cursor: pointer;
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+
+                & a {
+                    color: #ffffff;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-around;
+                    width: 100%;
+                    padding: 10px;
+                    padding-left: 0;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+}
